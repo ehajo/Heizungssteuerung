@@ -1,0 +1,23 @@
+Replace Part Report
+-------------------
+
+Report Written : 09.06.2025 21:32:34
+Design Path    : C:\Users\Hannes\Documents\GitHub\Heizungssteuerung\PCB\heizungssteuerung.sch
+Design Title   : 
+Created        : 26.05.2025 20:58:09
+Last Saved     : 09.06.2025 21:14:48
+Editing Time   : 280 min
+
+Replace Part:	LED_3mm_green
+Footprint:	<Any Footprint>
+
+With Part:	LED_3mm_red
+Footprint:	<Default Footprint>
+
+Replace matching components in the selection.
+
+The following components were replaced:
+---------------------------------------
+LED1
+
+                ---------------- End Of Report ----------------

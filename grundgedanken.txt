@@ -2,12 +2,12 @@ ESPHome kontrollierbare Heizungssteuerung
 
 Grundgedanken:
 
-- ESP32 Wroom
+x- ESP32 Wroom
 x- Analogeingänge via ADC (8-Kanal) MCP3208
 x- Referenzspannung mit AD421 (auf Lager!)
-- Referenzspannung für ADC und für Temperaturmessung über OPV (LM324)
+x- Referenzspannung für ADC und für Temperaturmessung über OPV (LM324)
 - 2 Kanäle des OPV für Hardware-Temperaturüberwachung
-- Temperatursensoren über Stiftleisten gejumpert (für optional Thermoelement, ...)
+weg- Temperatursensoren über Stiftleisten gejumpert (für optional Thermoelement, ...)
 - Pumpensteuerung mit Triac T3035H-6G (600V, 30A, snubberless), bis zu vier Pumpen
 - Eine 6.3AT Sicherung vorne weg. Evtl. wenn Platz noch 2AM Sicherungen für Pumpen.
 x- Eine 0.5A Sicherung für Step-Down-Wandler
@@ -16,7 +16,7 @@ x- Spannungsversorgung von 230V auf 5V mit ZNCP1117ST33T3G Zettler ZPI03S0500WC
 x- Schutzbeschaltung Spannungsversorgung mit Würth Strokos und Varistor
 - Ansteuerung Triacs mit Optotriac.
 - Eingang für Schalter Pumpe ein/aus
-- 0,96" OLED für Status
-- Inkrementalgeber mit Tastfunktion
-- Status LEDs (Power, Pumpenstatus, ...)
+weg- 0,96" OLED für Status
+weg- Inkrementalgeber mit Tastfunktion
+weg- Status LEDs (Power, Pumpenstatus, ...)
 - Gehäuse 3D-Druck?
