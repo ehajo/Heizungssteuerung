@@ -97,69 +97,70 @@ sensor:
     unit_of_measurement: "V"
     accuracy_decimals: 4
     update_interval: 2s
+    internal: true
 
-  - platform: mcp3204
-    mcp3204_id: mcp3208_hub
-    number: 1
-    id: ch1_v
-    name: "ADC CH1 Spannung"
-    unit_of_measurement: "V"
-    accuracy_decimals: 4
-    update_interval: 2s
-
-  - platform: mcp3204
-    mcp3204_id: mcp3208_hub
-    number: 2
-    id: ch2_v
-    name: "ADC CH2 Spannung"
-    unit_of_measurement: "V"
-    accuracy_decimals: 4
-    update_interval: 2s
-
-  - platform: mcp3204
-    mcp3204_id: mcp3208_hub
-    number: 3
-    id: ch3_v
-    name: "ADC CH3 Spannung"
-    unit_of_measurement: "V"
-    accuracy_decimals: 4
-    update_interval: 2s
-
-  - platform: mcp3204
-    mcp3204_id: mcp3208_hub
-    number: 4
-    id: ch4_v
-    name: "ADC CH4 Spannung"
-    unit_of_measurement: "V"
-    accuracy_decimals: 4
-    update_interval: 2s
-
-  - platform: mcp3204
-    mcp3204_id: mcp3208_hub
-    number: 5
-    id: ch5_v
-    name: "ADC CH5 Spannung"
-    unit_of_measurement: "V"
-    accuracy_decimals: 4
-    update_interval: 2s
-
-  - platform: mcp3204
-    mcp3204_id: mcp3208_hub
-    number: 6
-    id: ch6_v
-    name: "ADC CH6 Spannung"
-    unit_of_measurement: "V"
-    accuracy_decimals: 4
-    update_interval: 2s
-
-  - platform: mcp3204
-    mcp3204_id: mcp3208_hub
-    number: 7
-    id: ch7_v
-    name: "ADC CH7 Spannung"
-    unit_of_measurement: "V"
-    accuracy_decimals: 4
-    update_interval: 2s
+# - platform: mcp3204
+#   mcp3204_id: mcp3208_hub
+#   number: 1
+#   id: ch1_v
+#   name: "ADC CH1 Spannung"
+#   unit_of_measurement: "V"
+#   accuracy_decimals: 4
+#   update_interval: 2s
+#
+# - platform: mcp3204
+#   mcp3204_id: mcp3208_hub
+#   number: 2
+#   id: ch2_v
+#   name: "ADC CH2 Spannung"
+#   unit_of_measurement: "V"
+#   accuracy_decimals: 4
+#   update_interval: 2s
+#
+# - platform: mcp3204
+#   mcp3204_id: mcp3208_hub
+#   number: 3
+#   id: ch3_v
+#   name: "ADC CH3 Spannung"
+#   unit_of_measurement: "V"
+#   accuracy_decimals: 4
+#   update_interval: 2s
+#
+# - platform: mcp3204
+#   mcp3204_id: mcp3208_hub
+#   number: 4
+#   id: ch4_v
+#   name: "ADC CH4 Spannung"
+#   unit_of_measurement: "V"
+#   accuracy_decimals: 4
+#   update_interval: 2s
+#
+# - platform: mcp3204
+#   mcp3204_id: mcp3208_hub
+#   number: 5
+#   id: ch5_v
+#   name: "ADC CH5 Spannung"
+#   unit_of_measurement: "V"
+#   accuracy_decimals: 4
+#   update_interval: 2s
+#
+# - platform: mcp3204
+#   mcp3204_id: mcp3208_hub
+#   number: 6
+#   id: ch6_v
+#   name: "ADC CH6 Spannung"
+#   unit_of_measurement: "V"
+#   accuracy_decimals: 4
+#   update_interval: 2s
+#
+# - platform: mcp3204
+#   mcp3204_id: mcp3208_hub
+#   number: 7
+#   id: ch7_v
+#   name: "ADC CH7 Spannung"
+#   unit_of_measurement: "V"
+#   accuracy_decimals: 4
+#   update_interval: 2s
 
   # ---- Widerstand aus der Spannung (NTC nach GND -> DOWNSTREAM) ----
   # Pull-Up: 330 Ohm, Referenzspannung: 2.5 V
@@ -167,65 +168,65 @@ sensor:
     id: r1
     sensor: ch0_v
     configuration: DOWNSTREAM
-    resistor: 100000 Ohm
+    resistor: 101000 Ohm
     reference_voltage: 2.5V
     internal: true
 
-  - platform: resistance
-    id: r2
-    sensor: ch1_v
-    configuration: DOWNSTREAM
-    resistor: 330 Ohm
-    reference_voltage: 2.5V
-    internal: true
-
-  - platform: resistance
-    id: r3
-    sensor: ch2_v
-    configuration: DOWNSTREAM
-    resistor: 330 Ohm
-    reference_voltage: 2.5V
-    internal: true
-
-  - platform: resistance
-    id: r4
-    sensor: ch3_v
-    configuration: DOWNSTREAM
-    resistor: 330 Ohm
-    reference_voltage: 2.5V
-    internal: true
-
-  - platform: resistance
-    id: r5
-    sensor: ch4_v
-    configuration: DOWNSTREAM
-    resistor: 330 Ohm
-    reference_voltage: 2.5V
-    internal: true
-
-  - platform: resistance
-    id: r6
-    sensor: ch5_v
-    configuration: DOWNSTREAM
-    resistor: 330 Ohm
-    reference_voltage: 2.5V
-    internal: true
-
-  - platform: resistance
-    id: r7
-    sensor: ch6_v
-    configuration: DOWNSTREAM
-    resistor: 330 Ohm
-    reference_voltage: 2.5V
-    internal: true
-
-  - platform: resistance
-    id: r8
-    sensor: ch7_v
-    configuration: DOWNSTREAM
-    resistor: 330 Ohm
-    reference_voltage: 2.5V
-    internal: true
+# - platform: resistance
+#   id: r2
+#   sensor: ch1_v
+#   configuration: DOWNSTREAM
+#   resistor: 330 Ohm
+#   reference_voltage: 2.5V
+#   internal: true
+#
+# - platform: resistance
+#   id: r3
+#   sensor: ch2_v
+#   configuration: DOWNSTREAM
+#   resistor: 330 Ohm
+#   reference_voltage: 2.5V
+#   internal: true
+#
+# - platform: resistance
+#   id: r4
+#   sensor: ch3_v
+#   configuration: DOWNSTREAM
+#   resistor: 330 Ohm
+#   reference_voltage: 2.5V
+#   internal: true
+#
+# - platform: resistance
+#   id: r5
+#   sensor: ch4_v
+#   configuration: DOWNSTREAM
+#   resistor: 330 Ohm
+#   reference_voltage: 2.5V
+#   internal: true
+#
+# - platform: resistance
+#   id: r6
+#   sensor: ch5_v
+#   configuration: DOWNSTREAM
+#   resistor: 330 Ohm
+#   reference_voltage: 2.5V
+#   internal: true
+#
+# - platform: resistance
+#   id: r7
+#   sensor: ch6_v
+#   configuration: DOWNSTREAM
+#   resistor: 330 Ohm
+#   reference_voltage: 2.5V
+#   internal: true
+#
+# - platform: resistance
+#   id: r8
+#   sensor: ch7_v
+#   configuration: DOWNSTREAM
+#   resistor: 330 Ohm
+#   reference_voltage: 2.5V
+#   internal: true
 
   # ---- Temperatur aus dem Widerstand (100k NTC, Beta-Verfahren) ----
   - platform: ntc
@@ -241,96 +242,96 @@ sensor:
       reference_temperature: 25°C
       reference_resistance: 100kOhm
 
-  - platform: ntc
-    id: t2
-    name: "Temperatur Sensor 2"
-    sensor: r2
-    unit_of_measurement: "°C"
-    accuracy_decimals: 2
-    device_class: temperature
-    state_class: measurement
-    calibration:
-      b_constant: 3950
-      reference_temperature: 25°C
-      reference_resistance: 100kOhm
+#  - platform: ntc
+#    id: t2
+#    name: "Temperatur Sensor 2"
+#    sensor: r2
+#   unit_of_measurement: "°C"
+#    accuracy_decimals: 2
+#    device_class: temperature
+#    state_class: measurement
+#    calibration:
+#      b_constant: 3950
+#      reference_temperature: 25°C
+#      reference_resistance: 100kOhm
 
-  - platform: ntc
-    id: t3
-    name: "Temperatur Sensor 3"
-    sensor: r3
-    unit_of_measurement: "°C"
-    accuracy_decimals: 2
-    device_class: temperature
-    state_class: measurement
-    calibration:
-      b_constant: 3950
-      reference_temperature: 25°C
-      reference_resistance: 100kOhm
-
-  - platform: ntc
-    id: t4
-    name: "Temperatur Sensor 4"
-    sensor: r4
-    unit_of_measurement: "°C"
-    accuracy_decimals: 2
-    device_class: temperature
-    state_class: measurement
-    calibration:
-      b_constant: 3950
-      reference_temperature: 25°C
-      reference_resistance: 100kOhm
-
-  - platform: ntc
-    id: t5
-    name: "Temperatur Sensor 5"
-    sensor: r5
-    unit_of_measurement: "°C"
-    accuracy_decimals: 2
-    device_class: temperature
-    state_class: measurement
-    calibration:
-      b_constant: 3950
-      reference_temperature: 25°C
-      reference_resistance: 100kOhm
-
-  - platform: ntc
-    id: t6
-    name: "Temperatur Sensor 6"
-    sensor: r6
-    unit_of_measurement: "°C"
-    accuracy_decimals: 2
-    device_class: temperature
-    state_class: measurement
-    calibration:
-      b_constant: 3950
-      reference_temperature: 25°C
-      reference_resistance: 100kOhm
-
-  - platform: ntc
-    id: t7
-    name: "Temperatur Sensor 7"
-    sensor: r7
-    unit_of_measurement: "°C"
-    accuracy_decimals: 2
-    device_class: temperature
-    state_class: measurement
-    calibration:
-      b_constant: 3950
-      reference_temperature: 25°C
-      reference_resistance: 100kOhm
-
-  - platform: ntc
-    id: t8
-    name: "Temperatur Sensor 8"
-    sensor: r8
-    unit_of_measurement: "°C"
-    accuracy_decimals: 2
-    device_class: temperature
-    state_class: measurement
-    calibration:
-      b_constant: 3950
-      reference_temperature: 25°C
-      reference_resistance: 100kOhm
+# - platform: ntc
+#   id: t3
+#   name: "Temperatur Sensor 3"
+#   sensor: r3
+#   unit_of_measurement: "°C"
+#   accuracy_decimals: 2
+#   device_class: temperature
+#   state_class: measurement
+#   calibration:
+#     b_constant: 3950
+#     reference_temperature: 25°C
+#     reference_resistance: 100kOhm
+#
+# - platform: ntc
+#   id: t4
+#   name: "Temperatur Sensor 4"
+#   sensor: r4
+#   unit_of_measurement: "°C"
+#   accuracy_decimals: 2
+#   device_class: temperature
+#   state_class: measurement
+#   calibration:
+#     b_constant: 3950
+#     reference_temperature: 25°C
+#     reference_resistance: 100kOhm
+#
+# - platform: ntc
+#   id: t5
+#   name: "Temperatur Sensor 5"
+#   sensor: r5
+#   unit_of_measurement: "°C"
+#   accuracy_decimals: 2
+#   device_class: temperature
+#   state_class: measurement
+#   calibration:
+#     b_constant: 3950
+#     reference_temperature: 25°C
+#     reference_resistance: 100kOhm
+#
+# - platform: ntc
+#   id: t6
+#   name: "Temperatur Sensor 6"
+#   sensor: r6
+#   unit_of_measurement: "°C"
+#   accuracy_decimals: 2
+#   device_class: temperature
+#   state_class: measurement
+#   calibration:
+#     b_constant: 3950
+#     reference_temperature: 25°C
+#     reference_resistance: 100kOhm
+#
+# - platform: ntc
+#   id: t7
+#   name: "Temperatur Sensor 7"
+#   sensor: r7
+#   unit_of_measurement: "°C"
+#   accuracy_decimals: 2
+#   device_class: temperature
+#   state_class: measurement
+#   calibration:
+#     b_constant: 3950
+#     reference_temperature: 25°C
+#     reference_resistance: 100kOhm
+#
+# - platform: ntc
+#   id: t8
+#   name: "Temperatur Sensor 8"
+#   sensor: r8
+#   unit_of_measurement: "°C"
+#   accuracy_decimals: 2
+#   device_class: temperature
+#   state_class: measurement
+#   calibration:
+#     b_constant: 3950
+#     reference_temperature: 25°C
+#     reference_resistance: 100kOhm
 
 # ---- Bang-Bang-Regelung: Sensor 1 steuert Pumpe 1 ----
 climate:
